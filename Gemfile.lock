@@ -205,6 +205,7 @@ GEM
     multi_xml (0.6.0)
     multipart-post (2.1.1)
     mustache (1.1.0)
+    nio4r (2.5.2)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     nokogumbo (2.0.1)
@@ -270,7 +271,8 @@ GEM
     pry-rails (0.3.9)
       pry (>= 0.10.4)
     public_suffix (3.0.3)
-    puma (3.12.1)
+    puma (4.3.1)
+      nio4r (~> 2.0)
     r2 (0.2.7)
     rack (2.0.7)
     rack-mini-profiler (1.1.0)
@@ -505,7 +507,7 @@ DEPENDENCIES
   pg
   pry-nav
   pry-rails
-  puma
+  puma (>= 3.12.2)
   r2 (~> 0.2.5)
   rack-mini-profiler
   rack-protection
