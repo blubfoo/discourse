@@ -16,21 +16,21 @@ if rails_master?
 else
   # until rubygems gives us optional dependencies we are stuck with this
   # bundle update actionmailer actionpack actionview activemodel activerecord activesupport railties
-  gem 'actionmailer', '6.0.0'
-  gem 'actionpack', '6.0.0'
-  gem 'actionview', '6.0.0'
-  gem 'activemodel', '6.0.0'
-  gem 'activerecord', '6.0.0'
-  gem 'activesupport', '6.0.0'
-  gem 'railties', '6.0.0'
-  gem 'sprockets-rails'
+  gem 'actionmailer', '6.0.3.1'
+  gem 'actionpack', '6.0.3.1'
+  gem 'actionview', '6.0.3.1'
+  gem 'activemodel', '6.0.3.1'
+  gem 'activerecord', '6.0.3.1'
+  gem 'activesupport', '6.0.3.1'
+  gem 'railties', '6.0.3.1'
+  gem 'sprockets-rails', '>= 3.2.1'
 end
 
 # this will eventually be added to rails,
 # allows us to precompile all our templates in the unicorn master
-gem 'actionview_precompiler', require: false
+gem 'actionview_precompiler', '>= 0.2.1', require: false
 
-gem 'seed-fu'
+gem 'seed-fu', '>= 2.3.9'
 
 gem 'mail', require: false
 gem 'mini_mime'
@@ -39,7 +39,7 @@ gem 'mini_suffix'
 gem 'redis', '4.1.3'
 gem 'redis-namespace'
 
-gem 'active_model_serializers', '~> 0.8.3'
+gem 'active_model_serializers', '~> 0.8.4'
 
 gem 'onebox', '1.9.20'
 
@@ -52,7 +52,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 2.0.7'
 
 gem 'fast_xs', platform: :mri
 
@@ -137,7 +137,7 @@ group :test, :development do
   gem 'mocha', require: false
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
   gem 'rb-inotify', '~> 0.9', require: RUBY_PLATFORM =~ /linux/i ? 'rb-inotify' : false
-  gem 'rspec-rails', '4.0.0.beta2', require: false
+  gem 'rspec-rails', '4.0.0', require: false
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.3', require: false
   gem 'rspec-html-matchers'
   gem 'pry-nav'
@@ -148,14 +148,14 @@ end
 
 group :development do
   gem 'ruby-prof', require: false
-  gem 'bullet', require: !!ENV['BULLET']
+  gem 'bullet', '>= 6.0.0', require: !!ENV['BULLET']
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'yaml-lint'
 
   # waiting on 2.7.5 per: https://github.com/ctran/annotate_models/pull/595
   if rails_master?
-    gem 'annotate', git: 'https://github.com/ctran/annotate_models.git'
+    gem 'annotate', '>= 2.7.5', '>= 2.7.5', git: 'https://github.com/ctran/annotate_models.git'
   else
     gem 'annotate'
   end
@@ -191,13 +191,13 @@ gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.11.0', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'
 
 gem 'sassc', require: false
-gem "sassc-rails"
+gem "sassc-rails", ">= 2.1.1"
 
 gem 'rotp'
 gem 'rqrcode'
