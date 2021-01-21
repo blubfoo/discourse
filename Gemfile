@@ -77,7 +77,7 @@ gem 'nokogiri'
 gem 'css_parser', require: false
 
 gem 'omniauth'
-gem 'omniauth-openid'
+gem 'omniauth-openid', '>= 2.0.1'
 gem 'openid-redis-store'
 gem 'omniauth-facebook'
 gem 'omniauth-twitter'
