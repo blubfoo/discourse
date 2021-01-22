@@ -80,7 +80,7 @@ gem 'omniauth'
 gem 'omniauth-openid'
 gem 'openid-redis-store'
 gem 'omniauth-facebook'
-gem 'omniauth-twitter'
+gem 'omniauth-twitter', '>= 1.4.0'
 gem 'omniauth-instagram'
 gem 'omniauth-github'
 
