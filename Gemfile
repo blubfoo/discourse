@@ -74,7 +74,7 @@ gem 'discourse_image_optim', require: 'image_optim'
 gem 'multi_json'
 gem 'mustache'
 gem 'nokogiri'
-gem 'css_parser', require: false
+gem 'css_parser', '>= 1.7.0', require: false
 
 gem 'omniauth'
 gem 'omniauth-openid'
@@ -120,7 +120,7 @@ group :assets do
 end
 
 group :test do
-  gem 'webmock', require: false
+  gem 'webmock', '>= 3.5.1', require: false
   gem 'fakeweb', '~> 1.3.0', require: false
   gem 'minitest', require: false
   gem 'simplecov', require: false
