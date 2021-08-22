@@ -16,14 +16,14 @@ if rails_master?
 else
   # until rubygems gives us optional dependencies we are stuck with this
   # bundle update actionmailer actionpack actionview activemodel activerecord activesupport railties
-  gem 'actionmailer', '6.0.0'
-  gem 'actionpack', '6.0.0'
+  gem 'actionmailer', '6.0.4.1'
+  gem 'actionpack', '6.0.4.1'
   gem 'actionview', '6.0.0'
   gem 'activemodel', '6.0.0'
   gem 'activerecord', '6.0.0'
   gem 'activesupport', '6.0.0'
-  gem 'railties', '6.0.0'
-  gem 'sprockets-rails'
+  gem 'railties', '6.0.4.1'
+  gem 'sprockets-rails', '>= 3.2.1'
 end
 
 # this will eventually be added to rails,
@@ -52,7 +52,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 2.0.7'
 
 gem 'fast_xs', platform: :mri
 
@@ -137,7 +137,7 @@ group :test, :development do
   gem 'mocha', require: false
   gem 'rb-fsevent', require: RUBY_PLATFORM =~ /darwin/i ? 'rb-fsevent' : false
   gem 'rb-inotify', '~> 0.9', require: RUBY_PLATFORM =~ /linux/i ? 'rb-inotify' : false
-  gem 'rspec-rails', '4.0.0.beta2', require: false
+  gem 'rspec-rails', '4.0.0', require: false
   gem 'shoulda-matchers', '~> 3.1', '>= 3.1.3', require: false
   gem 'rspec-html-matchers'
   gem 'pry-nav'
@@ -191,13 +191,13 @@ gem 'memory_profiler', require: false, platform: :mri
 
 gem 'cppjieba_rb', require: false
 
-gem 'lograge', require: false
+gem 'lograge', '>= 0.11.0', require: false
 gem 'logstash-event', require: false
 gem 'logstash-logger', require: false
 gem 'logster'
 
 gem 'sassc', require: false
-gem "sassc-rails"
+gem "sassc-rails", ">= 2.1.1"
 
 gem 'rotp'
 gem 'rqrcode'
