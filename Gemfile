@@ -99,8 +99,8 @@ gem 'thor', require: false
 gem 'diffy', require: false
 gem 'rinku'
 gem 'sanitize'
-gem 'sidekiq'
-gem 'mini_scheduler'
+gem 'sidekiq', '>= 6.2.1'
+gem 'mini_scheduler', '>= 0.12.2'
 
 # for sidekiq web
 gem 'tilt', require: false
