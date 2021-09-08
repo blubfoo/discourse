@@ -149,7 +149,7 @@ end
 group :development do
   gem 'ruby-prof', require: false
   gem 'bullet', require: !!ENV['BULLET']
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
   gem 'yaml-lint'
 
