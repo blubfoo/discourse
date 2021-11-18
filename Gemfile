@@ -52,7 +52,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 4.0.0'
 
 gem 'fast_xs', platform: :mri
 
