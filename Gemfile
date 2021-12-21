@@ -50,7 +50,7 @@ gem 'discourse-ember-source', '~> 3.10.0'
 gem 'ember-handlebars-template', '0.8.0'
 gem 'barber'
 
-gem 'message_bus'
+gem 'message_bus', '>= 3.3.7'
 
 gem 'rails_multisite'
 
