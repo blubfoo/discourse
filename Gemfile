@@ -179,7 +179,7 @@ gem 'flamegraph', require: false
 gem 'rack-mini-profiler', require: false
 
 gem 'unicorn', require: false, platform: :mri
-gem 'puma', require: false
+gem 'puma', '>= 4.3.12', require: false
 gem 'rbtrace', require: false, platform: :mri
 gem 'gc_tracer', require: false, platform: :mri
 
