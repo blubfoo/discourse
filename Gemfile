@@ -96,7 +96,7 @@ gem 'r2', '~> 0.2.5', require: false
 gem 'rake'
 
 gem 'thor', require: false
-gem 'diffy', require: false
+gem 'diffy', '>= 3.4.1', require: false
 gem 'rinku'
 gem 'sanitize'
 gem 'sidekiq'
