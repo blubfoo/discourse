@@ -73,7 +73,7 @@ gem 'email_reply_trimmer', '~> 0.1'
 gem 'discourse_image_optim', require: 'image_optim'
 gem 'multi_json'
 gem 'mustache'
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.18.3'
 gem 'css_parser', require: false
 
 gem 'omniauth'
@@ -98,7 +98,7 @@ gem 'rake'
 gem 'thor', require: false
 gem 'diffy', require: false
 gem 'rinku'
-gem 'sanitize'
+gem 'sanitize', '>= 6.0.0'
 gem 'sidekiq'
 gem 'mini_scheduler'
 
