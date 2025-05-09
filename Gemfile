@@ -99,8 +99,8 @@ gem 'thor', require: false
 gem 'diffy', require: false
 gem 'rinku'
 gem 'sanitize'
-gem 'sidekiq'
-gem 'mini_scheduler'
+gem 'sidekiq', '>= 8.0.0'
+gem 'mini_scheduler', '>= 0.18.0'
 
 # for sidekiq web
 gem 'tilt', require: false
@@ -108,7 +108,7 @@ gem 'tilt', require: false
 gem 'execjs', require: false
 gem 'mini_racer'
 gem 'highline', '~> 1.7.0', require: false
-gem 'rack-protection' # security
+gem 'rack-protection' , '>= 4.0.0' # security
 gem 'cbor', require: false
 gem 'cose', require: false
 
