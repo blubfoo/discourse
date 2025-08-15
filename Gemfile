@@ -20,7 +20,7 @@ else
   gem 'actionpack', '6.0.0'
   gem 'actionview', '6.0.0'
   gem 'activemodel', '6.0.0'
-  gem 'activerecord', '6.0.0'
+  gem 'activerecord', '7.1.5.2'
   gem 'activesupport', '6.0.0'
   gem 'railties', '6.0.0'
   gem 'sprockets-rails'
@@ -52,7 +52,7 @@ gem 'barber'
 
 gem 'message_bus'
 
-gem 'rails_multisite'
+gem 'rails_multisite', '>= 5.0.0'
 
 gem 'fast_xs', platform: :mri
 
@@ -155,7 +155,7 @@ group :development do
 
   # waiting on 2.7.5 per: https://github.com/ctran/annotate_models/pull/595
   if rails_master?
-    gem 'annotate', git: 'https://github.com/ctran/annotate_models.git'
+    gem 'annotate', '>= 3.2.0', '>= 3.2.0', git: 'https://github.com/ctran/annotate_models.git'
   else
     gem 'annotate'
   end
