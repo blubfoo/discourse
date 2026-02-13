@@ -79,14 +79,14 @@ gem 'css_parser', require: false
 gem 'omniauth'
 gem 'omniauth-openid'
 gem 'openid-redis-store'
-gem 'omniauth-facebook'
+gem 'omniauth-facebook', '>= 6.0.0'
 gem 'omniauth-twitter'
 gem 'omniauth-instagram'
-gem 'omniauth-github'
+gem 'omniauth-github', '>= 1.4.0'
 
-gem 'omniauth-oauth2', require: false
+gem 'omniauth-oauth2', '>= 1.7.0', require: false
 
-gem 'omniauth-google-oauth2'
+gem 'omniauth-google-oauth2', '>= 0.8.0'
 
 gem 'oj'
 gem 'pg'
